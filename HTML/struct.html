@@ -2,43 +2,51 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="design.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/style.css">
 
-    <title>Meu portfólio</title>
+  <title>Meu portfólio</title>
 </head>
 
 <body>
-    <header>
-        <h2>Meu portfólio</h2>
-        <nav><!-----Criando a barra de navvegação-->
-            <ul>
-                <li><a href="struct.html">Home</a></li>
-                <li><a href="contato.html">Contatos</a></li>
-            </ul>
-        </nav><!--fim da barra de navegação-->
-    </header>
 
-    <main>
-        <h2 id="tituloport">Bem vindo ao meu portfolio</h2>
-        <img id="Image1" src="/imagens/Céu estrelado.jpg" alt="Imagem boas vindas" width="100% " height="500px">
-        <section>
-            <article>
-                <p>Meu nome é Samuel Silverio e tenho 21 anos</p>
-                <p>Atualmente sou um Desenvolvedor Fullstack</p>
-                <p>Estou muito feliz por todo aprendizado</p>
-            </article>
-        </section>
 
-        <section>
-            <h3>Saber mais</h3>
-            <input type="email" name="email" id="caixa1" placeholder="Digite seu email">
-            <input type="nome" name="nome" id="caixa2" placeholder="Digite seu nome">
-        </section>
+  <header>
+    <nav class="navbar">
+      <ul id="menu">
+        <li>
+          <a href="struct.html">Home</a>
+          <a href="contato.html">Contato</a>
+          <a href="habilidades.html">Conhecimentos</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    </main>
+  <div class="header">
+    <h1>Samuel Silverio</h1>
+    <h2 id="bemVindo"> Bem vindo ao meu portfólio</h2>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="column">
+        <h2>Sobre mim</h2>
+        <h3 id="texto">Meu nome é Samuel Silvério, tenho 21 anos e estou em processo de transição de carreira.<br>
+          Atualmente estou participando do bootcamp da generations para me tornar um Desenvolvedor Java Full stack
+          Junior.
+        </h3>
+
+        <div>
+          <img id="imagemSam" src="/imagens/minha foto.jpg" alt="Foto Samuel">
+        </div>
+      </div>
+    </div>
+  </main>
+
+
 
 </body>
 
