@@ -1,0 +1,692 @@
+html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.navbar {
+    border: solid white 3px;
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(243, 0, 0);
+}
+
+.navbar li a {
+    display: inline;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-style: oblique;
+}
+
+.navbar li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10%;
+}
+.read
+{
+    align-items: center;
+}
+.espaco{
+    padding: 100px
+}
+
+/*estilizando segunda pagina*/
+.container2{
+    background-color: rgba(255, 255, 255, 0.438);
+    padding: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center wrap;
+    align-items: center;
+    text-align: center;
+    border: white solid 3px;
+}
+
+#textMessage{
+    color:black;
+    font-style: normal;
+}
+
+form{
+	border: solid 3px black;
+	padding: 10px;
+	border-radius: 10%;
+}
+
+#nome{
+	border-radius: 10px;
+}
+#email{
+	border-radius: 10px;
+}
+
+#sugestion{
+	padding: 30px;
+	border-radius: 10px;
+}
+/*Estilização dos Cards*/
+
+.box h1 {
+	color: #fff;
+	padding: 30px;
+	margin-top: 100px;
+	text-align: center;
+	font-weight: 100;
+	font-size: 25px;
+	background: rgba(0, 0, 0, 0.8);
+	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+
+.conatiner {
+	width: 100%;
+	height: 500px;
+}
+.wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+.box {
+    top: 100px;
+	margin: 10px;
+	width: 300px;
+	height: 490px;
+	text-align: center;
+	border-radius: 3px;
+	-webkit-transition: 200ms ease-in-out;
+	-o-transition: 200ms ease-in-out;
+	transition: 200ms ease-in-out;
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.box:hover {
+	margin-bottom: -10px;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+	box-shadow: 5px 5px 5px rgba(250, 250, 250, 0.7);
+}
+
+
+.date h4 {
+	color: #fff;
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: 3px;
+	text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
+}
+.poster {
+	width: 130px;
+	height: 130px;
+	margin: 120px auto;
+	position: relative;
+	border-radius: 100px;
+}
+.poster h4 {
+	top: 16px;
+	color: #fff;
+	position: relative;
+	font-size: 80px;
+	text-align: center;
+	font-weight: 100;
+}
+.one {
+	background: url("https://sagittariusrecords.com.br/wp-content/uploads/2021/10/A1smtRIAUvL._AC_SL1500_.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.two {
+	background: url("data:image/jpeg;base64,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");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.three {
+	background: url("https://cinemahistoriaeducacao.files.wordpress.com/2011/01/escritores-da-liberdade-capa.jpg?w=640");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.five {
+	background: url("https://i.pinimg.com/564x/f0/d1/83/f0d183e34676409e473ed31121a08653--cimarron-music.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.six {
+	background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/884e6a75-9c9a-427d-a066-12e4d70bbc0d/dcgsqop-a35a2abe-3bdf-4113-a6e3-39edef3dfc31.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg4NGU2YTc1LTljOWEtNDI3ZC1hMDY2LTEyZTRkNzBiYmMwZFwvZGNnc3FvcC1hMzVhMmFiZS0zYmRmLTQxMTMtYTZlMy0zOWVkZWYzZGZjMzEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.s8efRtFlcKl0klhwwLf-yrouk2WQzBODCj4N9lZIVBg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/*.seven {
+	background: url("https://source.unsplash.com/700x770");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.eight {
+	background: url("https://source.unsplash.com/880x820");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.nine {
+	background: url("https://source.unsplash.com/898x820");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.ten {
+	background: url("https://source.unsplash.com/8998x920");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.eleven {
+	background: url("https://source.unsplash.com/898x960");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.tlv {
+	background: url("https://source.unsplash.com/999x888");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.thirteen {
+	background: url("https://source.unsplash.com/1000x777");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.ftn {
+	background: url("https://source.unsplash.com/2000x777");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.fith {
+	background: url("https://source.unsplash.com/2000x1000");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.sith {
+	background: url("https://source.unsplash.com/3000x1000");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.sevth {
+	background: url("https://source.unsplash.com/9000x9000");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* POSTER*/
+.p1 {
+	background: #2b5876; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#4e4376,
+		#2b5876
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#4e4376),
+		to(#2b5876)
+	);
+	background: -webkit-linear-gradient(left, #4e4376, #2b5876);
+	background: -o-linear-gradient(left, #4e4376, #2b5876);
+	background: linear-gradient(
+		to right,
+		#4e4376,
+		#2b5876
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 0 20px darkblue;
+	box-shadow: 0 0 20px darkblue;
+}
+
+.p2 {
+	background: #f857a6; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#ff5858,
+		#f857a6
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#ff5858),
+		to(#f857a6)
+	);
+	background: -webkit-linear-gradient(left, #ff5858, #f857a6);
+	background: -o-linear-gradient(left, #ff5858, #f857a6);
+	background: linear-gradient(
+		to right,
+		#ff5858,
+		#f857a6
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 0 20px #fa3380;
+	box-shadow: 0 0 20px #fa3380;
+}
+
+.p3 {
+	background: #4776e6; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#8e54e9,
+		#4776e6
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#8e54e9),
+		to(#4776e6)
+	);
+	background: -webkit-linear-gradient(left, #8e54e9, #4776e6);
+	background: -o-linear-gradient(left, #8e54e9, #4776e6);
+	background: linear-gradient(
+		to right,
+		#8e54e9,
+		#4776e6
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 0 20px lightblue;
+	box-shadow: 0 0 20px lightblue;
+}
+
+.p4 {
+	background: #1fa2ff; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#a6ffcb,
+		#12d8fa,
+		#1fa2ff
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#a6ffcb),
+		color-stop(#12d8fa),
+		to(#1fa2ff)
+	);
+	background: -webkit-linear-gradient(left, #a6ffcb, #12d8fa, #1fa2ff);
+	background: -o-linear-gradient(left, #a6ffcb, #12d8fa, #1fa2ff);
+	background: linear-gradient(
+		to right,
+		#a6ffcb,
+		#12d8fa,
+		#1fa2ff
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 0 20px skyblue;
+	box-shadow: 0 0 20px skyblue;
+}
+
+.p5 {
+	background: #aa076b; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#61045f,
+		#aa076b
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#61045f),
+		to(#aa076b)
+	);
+	background: -webkit-linear-gradient(left, #61045f, #aa076b);
+	background: -o-linear-gradient(left, #61045f, #aa076b);
+	background: linear-gradient(
+		to right,
+		#61045f,
+		#aa076b
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 0 20px purple;
+	box-shadow: 0 0 20px purple;
+}
+
+.p6 {
+	background: #da22ff; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#9733ee,
+		#da22ff
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#9733ee),
+		to(#da22ff)
+	);
+	background: -webkit-linear-gradient(left, #9733ee, #da22ff);
+	background: -o-linear-gradient(left, #9733ee, #da22ff);
+	background: linear-gradient(
+		to right,
+		#9733ee,
+		#da22ff
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 0 20px violet;
+	box-shadow: 0 0 20px violet;
+}
+
+.p7 {
+	background: #02aab0; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#00cdac,
+		#02aab0
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#00cdac),
+		to(#02aab0)
+	);
+	background: -webkit-linear-gradient(left, #00cdac, #02aab0);
+	background: -o-linear-gradient(left, #00cdac, #02aab0);
+	background: linear-gradient(
+		to right,
+		#00cdac,
+		#02aab0
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 0 20px lightgreen;
+	box-shadow: 0 0 20px lightgreen;
+}
+.p8 {
+	background: #5433ff; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#a5fecb,
+		#20bdff,
+		#5433ff
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#a5fecb),
+		color-stop(#20bdff),
+		to(#5433ff)
+	);
+	background: -webkit-linear-gradient(left, #a5fecb, #20bdff, #5433ff);
+	background: -o-linear-gradient(left, #a5fecb, #20bdff, #5433ff);
+	background: linear-gradient(
+		to right,
+		#a5fecb,
+		#20bdff,
+		#5433ff
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 0 20px lightblue;
+	box-shadow: 0 0 20px lightblue;
+}
+.p9 {
+	background: #2b5876; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#fa3,
+		#fa3380
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#fa3),
+		to(#fa3380)
+	);
+	background: -webkit-linear-gradient(left, #fa3, #fa3380);
+	background: -o-linear-gradient(left, #fa3, #fa3380);
+	background: linear-gradient(
+		to right,
+		#fa3,
+		#fa3380
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 0 20px #fa3380;
+	box-shadow: 0 0 20px #fa3380;
+}
+
+.p10 {
+	background: #2b5876; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		deepskyblue,
+		lightblue
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(deepskyblue),
+		to(lightblue)
+	);
+	background: -webkit-linear-gradient(left, deepskyblue, lightblue);
+	background: -o-linear-gradient(left, deepskyblue, lightblue);
+	background: linear-gradient(
+		to right,
+		deepskyblue,
+		lightblue
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 0 20px darkblue;
+	box-shadow: 0 0 20px darkblue;
+}
+
+.p11 {
+	background: #f2994a; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#f2c94c,
+		#f2994a
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#f2c94c),
+		to(#f2994a)
+	);
+	background: -webkit-linear-gradient(left, #f2c94c, #f2994a);
+	background: -o-linear-gradient(left, #f2c94c, #f2994a);
+	background: linear-gradient(
+		to right,
+		#f2c94c,
+		#f2994a
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 0 20px lightyellow;
+	box-shadow: 0 0 20px lightyellow;
+}
+
+.p12 {
+	background: #a770ef; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#fdb99b,
+		#cf8bf3,
+		#a770ef
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#fdb99b),
+		color-stop(#cf8bf3),
+		to(#a770ef)
+	);
+	background: -webkit-linear-gradient(left, #fdb99b, #cf8bf3, #a770ef);
+	background: -o-linear-gradient(left, #fdb99b, #cf8bf3, #a770ef);
+	background: linear-gradient(
+		to right,
+		#fdb99b,
+		#cf8bf3,
+		#a770ef
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 0 20px purple;
+	box-shadow: 0 0 20px purple;
+}
+
+.p13 {
+	background: #f4c4f3; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#fc67fa,
+		#f4c4f3
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#fc67fa),
+		to(#f4c4f3)
+	);
+	background: -webkit-linear-gradient(left, #fc67fa, #f4c4f3);
+	background: -o-linear-gradient(left, #fc67fa, #f4c4f3);
+	background: linear-gradient(
+		to right,
+		#fc67fa,
+		#f4c4f3
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 0 20px pink;
+	box-shadow: 0 0 20px pink;
+}
+.p14 {
+	background: #00c3ff; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#ffff1c,
+		#00c3ff
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#ffff1c),
+		to(#00c3ff)
+	);
+	background: -webkit-linear-gradient(left, #ffff1c, #00c3ff);
+	background: -o-linear-gradient(left, #ffff1c, #00c3ff);
+	background: linear-gradient(
+		to right,
+		#ffff1c,
+		#00c3ff
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 0 20px olive;
+	box-shadow: 0 0 20px olive;
+}
+.p15 {
+	background: #5614b0; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#dbd65c,
+		#5614b0
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#dbd65c),
+		to(#5614b0)
+	);
+	background: -webkit-linear-gradient(left, #dbd65c, #5614b0);
+	background: -o-linear-gradient(left, #dbd65c, #5614b0);
+	background: linear-gradient(
+		to right,
+		#dbd65c,
+		#5614b0
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 0 20px olive;
+	box-shadow: 0 0 20px olive;
+}
+
+.p16 {
+	background: #fc00ff; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#00dbde,
+		#fc00ff
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#00dbde),
+		to(#fc00ff)
+	);
+	background: -webkit-linear-gradient(left, #00dbde, #fc00ff);
+	background: -o-linear-gradient(left, #00dbde, #fc00ff);
+	background: linear-gradient(
+		to right,
+		#00dbde,
+		#fc00ff
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 0 20px olive;
+	box-shadow: 0 0 20px olive;
+}
+
+/*  FOLLOW*/
+.Follow {
+	background: url("https://pbs.twimg.com/profile_images/959092900708544512/v4Db9QRv_bigger.jpg")
+		no-repeat center / contain;
+	width: 50px;
+	height: 50px;
+	bottom: 9px;
+	right: 20px;
+	display: block;
+	position: fixed;
+	border-radius: 50%;
+	z-index: 999;
+	animation: rotation 10s infinite linear;
+}
+
+/*@-webkit-keyframes rotation {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(359deg);
+	}
+}
+
+
